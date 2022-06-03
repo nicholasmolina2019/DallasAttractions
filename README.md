@@ -30,4 +30,5 @@ Full CRUD app where users can add Dallas Attractions
 ## <a name="view"></a> VIEW
 * You can view the repository:
 [Github.com](https://github.com/nicholasmolina2019/DallasAttractions)
+[DallasAttractionWebsite](https://dtx-attractionstx.herokuapp.com/dallas)
 
