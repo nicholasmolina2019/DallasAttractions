@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/show.css">
+  <title>Document</title>
+</head>
+<Style>
+
+</Style>
+
+<body>
+  <nav>
+    <ul class="nav-bar">
+      <li><a href="/dallas">Home</a></li>
+      <li><a href="/dallas/New">Add Attraction</a></li>
+      <li><a href="/dallas/<%=dallas._id%>/EDIT">Edit</a></li>
+    </ul>
+  </nav>
+  <h2>
+    <%= dallas.name %>
+  </h2>
+
+  </header>
+  <main>
+    <section>
+        <a>
+          <img src="<%= dallas.img %>">
+        </a>
+        <p class = "description"><h4><%= dallas.description %></h4></p>
+        <p class = "description"><h5>Rating:<%= dallas.rating %></h5></p>
+      <form action="/dallas/<%=dallas._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="delete" />
+      </form>
+  
+    </div>
+    </section>
+  </main>
+</body>
+
+</html>

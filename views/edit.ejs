@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/edit.css">
+</head>
+
+
+  <body>
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="/dallas">Home</a></li>
+      </ul>
+    </nav>
+      
+      <main>
+          <h3>Edit Dallas Attractions</h3>
+          <form action ="/dallas/<%=dallas._id%>?_method=PUT" method="POST">
+              Name: <input type="text" name="name" /><br/>
+              Image: <input type="text" name="img" /><br/>
+              Description: <input type="text" name="description" /><br/>
+              Rating: <input type="text" name="number" /><br/>
+              <br>
+              <input type="submit" name="" value="submit"/>
+              <br/>
+              </form>
+</body>
+</html>

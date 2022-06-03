@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Document</title>
+    <style></style>
+  </head>
+
+  <body>
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="/dallas">Home</a></li>
+        <li><a href="/dallas/New">Add Attraction</a></li>
+      </ul>
+    </nav>
+    <h3>Dallas Attractions</h3>
+    <div class="flex">
+      <% for(let i=0; i < dallas.length; i++) { %>
+      <div class="dallas">
+        <a href="/dallas/<%=dallas[i]._id;%>">
+          <img src="<%= dallas[i].img%>" alt=""
+        /></a>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>
